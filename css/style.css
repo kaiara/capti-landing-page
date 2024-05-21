@@ -192,7 +192,6 @@ body {
     }
 
     p {
-        margin-top: 3rem;
         line-height: 31.5px;
         color: #868686;
         font-weight: 400;
@@ -644,4 +643,14 @@ body {
 .titulo-bolder {
     font-family: "Poppins-Regular", sans-serif !important;
     font-weight: 600;
+}
+
+.titulo-item-slide {
+    color: #868686;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.text-right {
+    text-align: right;
 }

@@ -1,3 +1,7 @@
+$('#textCarousel').carousel({
+    interval: 3000
+});
+
 $('#beneficiosCarousel .carousel-item').each(function () {
     var minPerSlide = 2;
     var next = $(this).next();
