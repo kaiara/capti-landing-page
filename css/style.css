@@ -3,7 +3,6 @@
     src: url(../fonts/Poppins/Poppins-Light.ttf)
 }
 
-
 @font-face {
     font-family: PoppinsBold;
     src: url(../fonts/Poppins/Poppins-Bold.ttf)
@@ -12,6 +11,11 @@
 @font-face {
     font-family: PoppinsRegular;
     src: url(../fonts/Poppins/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf)
 }
 
 :root {
@@ -236,29 +240,6 @@ body {
     }
 }
 
-.bloco-3-positon {
-    padding-left: 8%;
-}
-
-.bloco-3-positon-2 {
-    padding-left: 6%;
-}
-
-.bloco-3 {
-    h2 {
-        font-family: "Poppins-Regular", sans-serif !important;
-    }
-
-    p {
-        line-height: 27.2px;
-        color: #545454;
-    }
-
-    .bloco-3-img {
-        margin-top: 4%;
-    }
-}
-
 .card-1 {
     border: none;
     padding: 2.5rem;
@@ -326,11 +307,6 @@ body {
     }
 }
 
-.bloco-3-img {
-    position: relative;
-    /* Adicione estilos para a div pai se necessário */
-}
-
 .img-telas {
     margin-left: -10%;
     margin-top: -10%;
@@ -389,16 +365,69 @@ body {
     }
 }
 
-.bg-wave {
-    background-image: url('../image/bg-wave-2.png');
+.bloco-wave {
+    background-image: url('../image/bg-wave.png');
     background-repeat: no-repeat;
-    background-position-x: 3rem;
-    background-position-y: 2rem;
-    background-size: 50%;
+    background-position-x: 3.5rem;
+    background-position-y: 4rem;
+    background-size: 52%;
+    margin: 0;
+    padding: 0 6rem;
 
-    .container-fluid {
-        margin: 6rem 0;
-        padding: 0;
+    .bloco-wave-item {
+        margin: 2.5rem 0;
+
+        .bloco-wave-item-container {
+            display: flex;
+            align-items: start;
+
+            .bloco-wave-item-icon {
+                margin-right: 1rem;
+            }
+
+            .bloco-wave-item-content {
+                margin-left: 1rem;
+
+                h2 {
+                    font-family: PoppinsSemiBold, sans-serif !important;
+                    font-size: 22px;
+                    color: #252525;
+                }
+
+                h3 {
+                    font-family: PoppinsBold, sans-serif !important;
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: #E4531E;
+                }
+
+                p {
+                    font-family: PoppinsRegular, sans-serif !important;
+                    font-size: 16px;
+                    color: #545454;
+                }
+            }
+        }
+    }
+
+    .bloco-wave-item-2 {
+        margin-top: 17rem;
+    }
+
+    .bloco-wave-item-3 {
+        margin: 18rem 0 0 2rem;
+
+        .bloco-wave-item-image {
+            margin-top: -7rem;
+        }
+    }
+
+    .bloco-wave-item-4 {
+        margin: 3.5rem 0 0 2rem;
+
+        .bloco-wave-item-image {
+            margin-top: 5rem;
+        }
     }
 }
 
@@ -438,119 +467,84 @@ body {
     }
 }
 
-@media (max-width: 991px) {
-    .bg-wave {
+/* @media (max-width: 991px) {
+    .bloco-wave {
         background-image: none;
     }
 }
 
 @media (min-width: 992px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 3rem;
         background-position-y: 2rem;
         background-size: 55%;
-    }
-
-    .bloco-3-positon-2 {
-        padding-left: 12%;
     }
 }
 
 @media (min-width: 1000px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 3rem;
         background-position-y: 2rem;
         background-size: 55%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 12%;
-    }
 }
 
 @media (min-width: 1051px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 3rem;
         background-position-y: 2rem;
         background-size: 53%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 11%;
-    }
 }
 
 @media (min-width: 1100px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 3rem;
         background-position-y: 2rem;
         background-size: 52%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 10%;
-    }
 }
 
 @media (min-width: 1151px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 3rem;
         background-position-y: 2rem;
         background-size: 50%;
     }
 
-    .bloco-3-positon-2 {
-        padding-left: 8%;
-    }
 }
 
 @media (min-width: 1300px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 3rem;
         background-position-y: 2rem;
         background-size: 49%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 6%;
-    }
 }
 
 @media (min-width: 1500px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 4rem;
         background-position-y: 2rem;
         background-size: 47.8%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 5%;
-    }
 }
 
 @media (min-width: 1700px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 5rem;
         background-position-y: 2rem;
         background-size: 47%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 5%;
-    }
 }
 
 @media (min-width: 1850px) {
-    .bg-wave {
+    .bloco-wave {
         background-position-x: 5rem;
         background-position-y: 2rem;
         background-size: 46.5%;
     }
-
-    .bloco-3-positon-2 {
-        padding-left: 4%;
-    }
-}
+} */
 
 .no-zindex {
     z-index: -1 !important;
