@@ -49,19 +49,6 @@ body {
     border-bottom: 1px solid #C7C7C7;
 }
 
-.bg-linear-2 {
-    position: absolute;
-    bottom: 192px;
-    left: -203px;
-    width: 326px;
-    height: 278px;
-    background-size: cover;
-    /* border-radius: 50%; */
-    z-index: 0;
-    background-image: url('../image/icones/fundo-amarelo.svg');
-
-}
-
 .block-benefits {
     margin-top: 11rem !important;
 }
@@ -73,10 +60,20 @@ body {
 .back-total {
     position: relative;
     background-image: url(../image/back.png);
-    background-size: 100%;
+    background-size: 26%;
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../image/seta-esquerda.svg);
+}
+.carousel-control-next-icon{
+    background-image: url(../image/seta-direita.svg);
+}
+.carrousel{
+    padding: 1rem 5.5rem 1rem 5.5rem;
 }
 
 /*Colors*/
@@ -84,7 +81,7 @@ body {
     color: var(--primary);
 }
 
-.color-orange-2{
+.color-orange-2 {
     color: #E67952;
 }
 
@@ -187,7 +184,7 @@ body {
         font-size: 33px;
     }
 
-    span{
+    span {
         color: #868686;
         font-size: 20px;
     }
@@ -198,9 +195,11 @@ body {
         color: #868686;
         font-weight: 400;
     }
-    .secao-2-1{
+
+    .secao-2-1 {
         margin-top: 5rem;
-        h2{
+
+        h2 {
             text-align: right;
         }
     }
@@ -215,7 +214,7 @@ body {
         font-size: 33px;
     }
 
-    span{
+    span {
         color: #868686;
         font-size: 20px;
     }
@@ -226,9 +225,11 @@ body {
         color: #868686;
         font-weight: 400;
     }
-    .secao-2-1{
+
+    .secao-2-1 {
         margin-top: 5rem;
-        h2{
+
+        h2 {
             text-align: right;
         }
     }
@@ -401,21 +402,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    .links{
+    .links {
         padding: 0;
     }
-    .bg-linear-2 {
-        background: none;
-    }
-    .back-total{
+
+    .back-total {
         background: none
     }
+
     .card-1 {
         h4 {
             padding-right: 0.1rem;
             padding-left: 0.1rem;
         }
-        p{
+
+        p {
             padding: 0.1rem;
         }
     }
@@ -425,12 +426,14 @@ body {
             padding-right: 0.1rem;
             padding-left: 0.1rem;
         }
-        p{
+
+        p {
             padding: 0.1rem;
         }
     }
-    .block-benefits{
-        margin-top:  1rem !important;
+
+    .block-benefits {
+        margin-top: 1rem !important;
     }
 }
 
