@@ -10,6 +10,7 @@
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <title>Capti</title>
 </head>
 
@@ -47,84 +48,168 @@
     <!--/Menu-->
 
     <div class="back-total">
-        <div class="container-fluid mt-4 border-gray">
+        <div class="container-fluid mt-4">
             <div class="container mt-4 p-0">
                 <div class="row col-12 mt-4">
-                    <div class="col-lg-8 col-sm-12 mt-4 bloco-1">
-                        <h1 id="secao1">
-                            <span class="color-orange"><strong>Capti, </strong></span>inteligência que <strong
-                                class="color-orange-2">transforma
-                                projetos em realidade</strong>
-                        </h1>
-                        <p class="color-secondary-gray font-weight-normal mt-4">
-                            Utilizando <strong>tecnologia avançada e inteligência artificial,</strong> facilitamos o
-                            processo de <strong>captação
-                                de editais</strong> de fomento à inovação, analisando as características do seu projeto
-                            para
-                            apresentar as oportunidades ideais.
-                        </p>
-                        <p class="color-secondary-gray font-weight-normal">
-                            <strong>Simplifique a sua busca, categorização e priorização de editais abertos,</strong>
-                            além de contar com
-                            um plano de ação detalhado para guiar você ao sucesso no envio de propostas com eficiência e
-                            precisão.  
-                        </p>
-                        <button class="btn btn-green col-lg-4 col-sm-12 p-2 mt-4">Cadastre-se</button>
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-12 mt-4 bloco-1">
+                            <h1 id="secao1">
+                                <span class="color-orange"><strong>Capti,</strong></span> inteligência que
+                                <strong class="color-orange-2">transforma projetos em realidade</strong>
+                            </h1>
+
+                            <p class="color-secondary-gray font-weight-normal mt-4">
+                                Utilizando <strong>tecnologia avançada e inteligência artificial,</strong> facilitamos o
+                                processo de <strong>captação de editais</strong> de fomento à inovação, analisando as
+                                características do seu projeto para apresentar as oportunidades ideais.
+                            </p>
+
+                            <p class="color-secondary-gray font-weight-normal">
+                                <strong>Simplifique a sua busca, categorização e priorização de editais
+                                    abertos,</strong>
+                                além de contar com um plano de ação detalhado para guiar você ao sucesso no envio de
+                                propostas com eficiência e precisão.
+                            </p>
+
+                            <button class="btn btn-green col-lg-4 col-sm-12 p-2 mt-4">Cadastre-se</button>
+                        </div>
+
+                        <div class="position-relative col-lg-4 h-100 col-sm-12 d-flex justify-content-end pr-0 mr-0">
+                            <div class="background-radial">
+                                <img src="image/prancheta.svg" alt="imagem de uma prancheta com uma lupa em cima"
+                                    width="95%" />
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="position-relative col-lg-4 h-100 col-sm-12 d-flex justify-content-end pr-0 mr-0">
-                        <div class="background-radial">
-                            <img src="image/prancheta.svg" alt="imagem de uma prancheta com uma lupa em cima"
-                                width="95%" />
-                        </div>
-                    </div>
-                    <div class="row mx-0 mt-4 mb-1 block-benefits">
-                        <div class="mb-4 col-lg-3 col-sm-6 d-flex align-items-top justify-content-center">
-                            <div class="col-3">
-                                <div class="bg-purple card justify-content-center aling-items-center p-3">
-                                    <img class="card-img" src="image/icones/icone-1.svg" alt="Imagem icone">
+                    <div class="row mt-5">
+                        <div id="beneficiosCarousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner w-100" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-sm-6 col-6">
+                                        <div class="d-flex px-4">
+                                            <div class="col-3">
+                                                <div
+                                                    class="bg-purple card justify-content-center aling-items-center p-3">
+                                                    <img class="card-img" src="image/icones/icone-1.svg"
+                                                        alt="Imagem icone">
+                                                </div>
+                                            </div>
+                                            <div class="col-9 m-3 mt-0">
+                                                <p class="mb-0"><strong>Alto desempenho</strong></p>
+                                                <p class="mb-0 mt-1">Maximize a busca de propostas de incentivo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-sm-6 col-6">
+                                        <div class="d-flex px-4">
+                                            <div class="col-3">
+                                                <div
+                                                    class="bg-green-light card justify-content-center aling-items-center p-3">
+                                                    <img class="card-img" src="image/icones/icone-2.svg"
+                                                        alt="Imagem icone">
+                                                </div>
+                                            </div>
+                                            <div class="col-9 m-3 mt-0">
+                                                <p class="mb-0"><strong>Agilidade</strong></p>
+                                                <p class="mb-0 mt-1">Praticidade e velocidade no gerencimento e
+                                                    escolha de
+                                                    oportunidades
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-sm-6 col-6">
+                                        <div class="d-flex px-4">
+                                            <div class="col-3">
+                                                <div
+                                                    class="bg-blue-light card justify-content-center aling-items-center p-3">
+                                                    <img class="card-img" src="image/icones/icone-3.svg"
+                                                        alt="Imagem icone">
+                                                </div>
+                                            </div>
+                                            <div class="col-9 m-3 mt-0">
+                                                <p class="mb-0"><strong>Eficácia</strong></p>
+                                                <p class="mb-0 mt-1">Otimize seu tempo com uma ferramenta
+                                                    integrada e automatizada
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-sm-6 col-6">
+                                        <div class="d-flex px-4">
+                                            <div class="col-3">
+                                                <div class="bg-red card justify-content-center aling-items-center p-3">
+                                                    <img class="card-img" src="image/icones/icone-4.svg"
+                                                        alt="Imagem icone" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-9 m-3 mt-0">
+                                                <p class="mb-0"><strong>Assertividade</strong></p>
+                                                <p class="mb-0 mt-1">Encontre o edital certo para financiar o
+                                                    seu projeto
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-sm-6 col-6">
+                                        <div class="d-flex px-4">
+                                            <div class="col-3">
+                                                <div class="bg-red card justify-content-center aling-items-center p-3">
+                                                    <img class="card-img" src="image/icones/icone-4.svg"
+                                                        alt="Imagem icone" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-9 m-3 mt-0">
+                                                <p class="mb-0"><strong>Assertividade</strong></p>
+                                                <p class="mb-0 mt-1">Encontre o edital certo para financiar o
+                                                    seu projeto
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-sm-6 col-6">
+                                        <div class="d-flex px-4">
+                                            <div class="col-3">
+                                                <div class="bg-red card justify-content-center aling-items-center p-3">
+                                                    <img class="card-img" src="image/icones/icone-4.svg"
+                                                        alt="Imagem icone" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-9 m-3 mt-0">
+                                                <p class="mb-0"><strong>Assertividade</strong></p>
+                                                <p class="mb-0 mt-1">Encontre o edital certo para financiar o
+                                                    seu projeto
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-9 m-3 mt-0">
-                                <p class="mb-0"><strong>Alto desempenho</strong></p>
-                                <p class="mb-0 mt-1">Maximize a busca de propostas de incentivo</p>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-lg-3 col-sm-6 d-flex align-items-top justify-content-center">
-                            <div class="col-3">
-                                <div class="bg-green-light card justify-content-center aling-items-center p-3">
-                                    <img class="card-img" src="image/icones/icone-2.svg" alt="Imagem icone">
-                                </div>
-                            </div>
-                            <div class="col-9 m-3 mt-0">
-                                <p class="mb-0"><strong>Agilidade</strong></p>
-                                <p class="mb-0 mt-1">Praticidade e velocidade no gerencimento e escolha de oportunidades
-                                </p>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-lg-3 col-sm-6 d-flex align-items-top justify-content-center">
-                            <div class="col-3">
-                                <div class="bg-blue-light card justify-content-center aling-items-center p-3">
-                                    <img class="card-img" src="image/icones/icone-3.svg" alt="Imagem icone">
-                                </div>
-                            </div>
-                            <div class="col-9 m-3 mt-0">
-                                <p class="mb-0"><strong>Eficácia</strong></p>
-                                <p class="mb-0 mt-1">Otimize seu tempo com uma ferramenta integrada e automatizada</p>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-lg-3 col-sm-6 d-flex align-items-top justify-content-center">
-                            <div class="col-3">
-                                <div class="bg-red card justify-content-center aling-items-center p-3">
-                                    <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
-                                        width="100%">
-                                </div>
-                            </div>
-                            <div class="col-9 m-3 mt-0">
-                                <p class="mb-0"><strong>Assertividade</strong></p>
-                                <p class="mb-0 mt-1">Encontre o edital certo para financiar o seu projeto
-                                </p>
-                            </div>
+
+                            <a class="carousel-control-prev w-auto" href="#beneficiosCarousel" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next w-auto" href="#beneficiosCarousel" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +217,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bloco-2-top">
+    <div class="container-fluid bloco-2-top border-gray">
         <div class="container bloco-2">
             <div class="row">
                 <h2 id="secao2" class="color-orange">O mercado de tecnologia e as oportunidades de crescimento </h2>
@@ -147,6 +232,86 @@
                     como principal objetivo aumentar os níveis de produtividade e competitividade da indústria
                     brasileira, assim como otimizar a segurança e a saúde do setor industrial. </p>
             </div>
+
+            <div class="row my-5">
+                <div class="d-flex justify-content-center">
+                    <h3 class="titulo-bolder">Principais agências de fomento no Brasil:</h3>
+                </div>
+
+                <div id="parceirosCarousel" class="carousel slide w-100 mt-5" data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-sm-3 col-3">
+                                <div class="d-flex justify-content-center px-4">
+                                    <div class="bg-purple card justify-content-center aling-items-center p-3">
+                                        <img class="card-img" src="image/icones/icone-1.svg" alt="Imagem icone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-sm-3 col-3">
+                                <div class="d-flex justify-content-center px-4">
+                                    <div class="bg-green-light card justify-content-center aling-items-center p-3">
+                                        <img class="card-img" src="image/icones/icone-2.svg" alt="Imagem icone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-sm-3 col-3">
+                                <div class="d-flex justify-content-center px-4">
+                                    <div class="bg-blue-light card justify-content-center aling-items-center p-3">
+                                        <img class="card-img" src="image/icones/icone-3.svg" alt="Imagem icone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-sm-3 col-3">
+                                <div class="d-flex justify-content-center px-4">
+                                    <div class="bg-red card justify-content-center aling-items-center p-3">
+                                        <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
+                                            width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-sm-3 col-3">
+                                <div class="d-flex justify-content-center px-4">
+                                    <div class="bg-red card justify-content-center aling-items-center p-3">
+                                        <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
+                                            width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-sm-3 col-3">
+                                <div class="d-flex justify-content-center px-4">
+                                    <div class="bg-red card justify-content-center aling-items-center p-3">
+                                        <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
+                                            width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev w-auto" href="#parceirosCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next w-auto" href="#parceirosCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -158,7 +323,7 @@
                     e priorização dos editais de financiamento disponíveis no mercado para projetos de pesquisa,
                     desenvolvimento e inovação.Nosso propósito é democratizar o acesso à inovação, capacitando
                     organizações e pesquisadores a encontrarem oportunidades de financiamento de modo inteligente e
-                    eficaz. </p>
+                    eficaz.</p>
             </div>
         </div>
     </div>
@@ -262,112 +427,6 @@
                     <img class="img-fluid" src="image/homem-com-oculos.png" alt="imagem de um celular" />
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="carouselExampleControls" class="carousel slide container-fluid" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="container carrousel">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <div class="col-3">
-                                    <div class="bg-purple card justify-content-center aling-items-center p-3">
-                                        <img class="card-img" src="image/icones/icone-1.svg" alt="Imagem icone">
-                                    </div>
-                                </div>
-                                <div class="col-9 m-3 mt-0">
-                                    <p class="mb-0"><strong>Alto desempenho</strong></p>
-                                    <p class="mb-0 mt-1">Maximize a busca de propostas de incentivo</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <div class="col-3">
-                                    <div class="bg-green-light card justify-content-center aling-items-center p-3">
-                                        <img class="card-img" src="image/icones/icone-2.svg" alt="Imagem icone">
-                                    </div>
-                                </div>
-                                <div class="col-9 m-3 mt-0">
-                                    <p class="mb-0"><strong>Agilidade</strong></p>
-                                    <p class="mb-0 mt-1">Praticidade e velocidade no gerencimento e escolha de oportunidades
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <div class="col-3">
-                                    <div class="bg-blue-light card justify-content-center aling-items-center p-3">
-                                        <img class="card-img" src="image/icones/icone-3.svg" alt="Imagem icone">
-                                    </div>
-                                </div>
-                                <div class="col-9 m-3 mt-0">
-                                    <p class="mb-0"><strong>Eficácia</strong></p>
-                                    <p class="mb-0 mt-1">Otimize seu tempo com uma ferramenta integrada e automatizada</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <div class="col-3">
-                                    <div class="bg-red card justify-content-center aling-items-center p-3">
-                                        <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
-                                            width="100%">
-                                    </div>
-                                </div>
-                                <div class="col-9 m-3 mt-0">
-                                    <p class="mb-0"><strong>Assertividade</strong></p>
-                                    <p class="mb-0 mt-1">Encontre o edital certo para financiar o seu projeto
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <div class="col-3">
-                                    <div class="bg-red card justify-content-center aling-items-center p-3">
-                                        <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
-                                            width="100%">
-                                    </div>
-                                </div>
-                                <div class="col-9 m-3 mt-0">
-                                    <p class="mb-0"><strong>Assertividade</strong></p>
-                                    <p class="mb-0 mt-1">Encontre o edital certo para financiar o seu projeto
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <div class="col-3">
-                                    <div class="bg-red card justify-content-center aling-items-center p-3">
-                                        <img class="card-img" src="image/icones/icone-4.svg" alt="Imagem icone"
-                                            width="100%">
-                                    </div>
-                                </div>
-                                <div class="col-9 m-3 mt-0">
-                                    <p class="mb-0"><strong>Assertividade</strong></p>
-                                    <p class="mb-0 mt-1">Encontre o edital certo para financiar o seu projeto
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
         </div>
     </div>
     <div class="container-fluid bloco-2-top">
@@ -500,6 +559,7 @@
         </div>
     </div>
 
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>

@@ -69,10 +69,12 @@ body {
 .carousel-control-prev-icon {
     background-image: url(../image/seta-esquerda.svg);
 }
-.carousel-control-next-icon{
+
+.carousel-control-next-icon {
     background-image: url(../image/seta-direita.svg);
 }
-.carrousel{
+
+.carrousel {
     padding: 1rem 5.5rem 1rem 5.5rem;
 }
 
@@ -557,4 +559,89 @@ body {
 
 .img-icon {
     background-color: white;
+}
+
+/*********************************************************************/
+/* Bootstrap Carousel */
+/*********************************************************************/
+/* medium - display 2  */
+@media (min-width: 768px) {
+
+    #beneficiosCarousel .carousel-inner .carousel-item-right.active,
+    #beneficiosCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    #beneficiosCarousel .carousel-inner .carousel-item-left.active,
+    #beneficiosCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+
+    #parceirosCarousel .carousel-inner .carousel-item-right.active,
+    #parceirosCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    #parceirosCarousel .carousel-inner .carousel-item-left.active,
+    #parceirosCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
+
+/* large - display 3 */
+@media (min-width: 992px) {
+
+    #beneficiosCarousel .carousel-inner .carousel-item-right.active,
+    #beneficiosCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    #beneficiosCarousel .carousel-inner .carousel-item-left.active,
+    #beneficiosCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+
+    #parceirosCarousel .carousel-inner .carousel-item-right.active,
+    #parceirosCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    #parceirosCarousel .carousel-inner .carousel-item-left.active,
+    #parceirosCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #beneficiosCarousel .carousel-inner .carousel-item>div,
+    #parceirosCarousel .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #beneficiosCarousel .carousel-inner .carousel-item>div:first-child,
+    #parceirosCarousel .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+#beneficiosCarousel .carousel-inner .carousel-item.active,
+#beneficiosCarousel .carousel-inner .carousel-item-next,
+#beneficiosCarousel .carousel-inner .carousel-item-prev,
+#parceirosCarousel .carousel-inner .carousel-item.active,
+#parceirosCarousel .carousel-inner .carousel-item-next,
+#parceirosCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+#beneficiosCarousel .carousel-inner .carousel-item-right,
+#beneficiosCarousel .carousel-inner .carousel-item-left,
+#parceirosCarousel .carousel-inner .carousel-item-right,
+#parceirosCarousel .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+.titulo-bolder {
+    font-family: "Poppins-Regular", sans-serif !important;
+    font-weight: 600;
 }
