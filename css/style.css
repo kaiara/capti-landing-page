@@ -25,8 +25,8 @@
     -secondary-gray: #5C5C5C;
     --bg-purple: #EFEAFF;
     --bg-green-light: #ECFFDA;
-    --bg-blue-light: #DAE6FF;
-    --bg-red: #FFE5DA;
+    --bg-blue-light: #DAFFF8;
+    --bg-red: #FFDADA;
     --text-gray: #868686;
 
 }
@@ -145,9 +145,18 @@ body {
     border: 1px solid var(--bg-green-light);
 }
 
+.bg-green {
+    background-color: #C6CD9A;
+    border: 1px solid #C6CD9A;
+}
+
 .bg-blue-light {
     background-color: var(--bg-blue-light);
     border: 1px solid var(--bg-blue-light);
+}
+.bg-pink {
+    background-color: #FFC1FD;
+    border: 1px solid #FFC1FD;
 }
 
 .bg-blue {
@@ -209,9 +218,14 @@ body {
         }
     }
 }
-
+.icones-carrousel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .bloco-6 {
-
+    margin-bottom: 3rem;
     h2 {
         margin-top: 3rem;
         font-family: "Poppins-Regular", sans-serif !important;
@@ -408,7 +422,14 @@ body {
 .img-icon {
     background-color: white;
 }
+#parceirosCarousel {
+    border-bottom: 1px soliod #C7C7C7;
 
+    .card{
+        border: none !important;
+        height: 200px;
+    }
+}
 /*********************************************************************/
 /* Bootstrap Carousel */
 /*********************************************************************/
@@ -473,6 +494,13 @@ body {
     }
 }
 
+#beneficiosCarousel .card {
+    border-radius: 20px;
+}
+
+#beneficiosCarousel .carousel-inner {
+    padding-left: 1rem;
+}
 #beneficiosCarousel .carousel-inner .carousel-item.active,
 #beneficiosCarousel .carousel-inner .carousel-item-next,
 #beneficiosCarousel .carousel-inner .carousel-item-prev,
