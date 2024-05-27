@@ -561,3 +561,15 @@ body {
 .text-right {
     text-align: right;
 }
+
+@media (min-width: 1920px) {
+    .back-total {
+        background-size: 20%;
+    }
+}
+
+@media (min-width: 2360px) {
+    .back-total {
+        background-size: 30%;
+    }
+}
