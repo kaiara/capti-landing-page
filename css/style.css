@@ -337,12 +337,26 @@ body {
         list-style-type: none;
         list-style: none;
     }
+    li{
+        margin-top: 0.7rem;
+    }
 
-    li:before {
+    .seta-ok:before {
         background-image: url(../image/icones/seta.svg);
         background-size: 14px 20px;
         display: inline-block;
-        width: 10px;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        left: 70px;
+    }
+    .seta-cancel:before {
+        background-image: url(../image/icones/x-symbol.svg);
+        background-size: 14px 20px;
+        display: inline-block;
+        width: 20px;
         height: 20px;
         background-repeat: no-repeat;
         content: "";
