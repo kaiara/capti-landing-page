@@ -74,7 +74,7 @@
 }
 @media (min-width: 992px) {
     .bloco-wave {
-        background-image: url('../image/bg-wave.png');
+        /* background-image: url('../image/bg-wave.png'); */
         background-repeat: no-repeat;
         background-position-x: 4.5rem;
         background-position-y: 3.5rem;
@@ -116,7 +116,7 @@
             flex-direction: unset;
 
             .bloco-wave-item-image {
-                margin-top: 5rem;
+                margin-top: 3.5 rem;
             }
         }
     }
@@ -226,16 +226,16 @@
 @media (min-width: 1260px) {
     .bloco-wave {
         .bloco-wave-item-3 {
-            margin: 10rem 0 0 4rem;
+            margin: 14rem 0 0 0;
         }
 
         .bloco-wave-item-4 {
-            margin: 0rem 0 0 4rem;
+            margin: 6rem 0 0 0rem;
         }
     }
 }
 
-@media (min-width: 1300px) {
+/* @media (min-width: 1300px) {
     .bloco-wave {
         .bloco-wave-item-3 {
             margin: 11rem 0 0 4rem;
@@ -413,6 +413,14 @@
         .bloco-wave-item-2 {
             margin: 25rem 0 0 3rem;
         }
+        .bloco-wave-item {
+            .bloco-wave-item-image {
+                img{
+                    width: 80%;
+
+                }
+            }
+        }
 
         .bloco-wave-item-3 {
             margin: 24rem 0 0 2rem;
@@ -495,7 +503,7 @@
 @media (min-width: 2010px) {
     .bloco-wave {
         .bloco-wave-item-3 {
-            margin: 44rem 0 0 2rem;
+            margin: 28rem 0 0 2rem;
         }
     }
 }
@@ -503,15 +511,22 @@
 @media (min-width: 2050px) {
     .bloco-wave {
         .bloco-wave-item-3 {
-            margin: 47rem 0 0 2rem;
+            margin: 30rem 0 0 2rem;
         }
     }
 }
-
-@media (min-width: 2100px) {
+@media (min-width: 2099px) and (max-width: 3000px) {
     .bloco-wave {
         .bloco-wave-item-3 {
-            margin: 50rem 0 0 2rem;
+            transition: margin 0.1s ease; /* Adiciona uma transição suave para as mudanças de margem */
+
+        /* }
+    }
+} 
+ @media (min-width: 2100px) {
+    .bloco-wave {
+        .bloco-wave-item-3 {
+            margin: 41rem 0 0 2rem;
         }
     }
-}
+}  */

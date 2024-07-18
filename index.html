@@ -13,6 +13,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <title>Capti</title>
+
 </head>
 
 <body>
@@ -364,13 +365,13 @@
             </div>
 
             <div class="bloco-wave-item-image col-sm-12 col-md-12 col-lg-5 no-zindex">
-                <img class="img-fluid" src="image/image-wave-step-1.png" alt="Imagem etapa 01" />
+                <img class="img-fluid" src="image/image-wave-step-1.jpg" alt="Imagem etapa 01" />
             </div>
         </div>
 
         <div class="bloco-wave-item bloco-wave-item-2 row">
             <div class="bloco-wave-item-image col-sm-12 col-md-12 col-lg-6 col-xl-6 no-zindex">
-                <img class="img-fluid mr-2" src="image/sessao-3.svg" alt="Imagem etapa 02" />
+                <img class="img-fluid mr-2" src="image/sessao-3.jpg" alt="Imagem etapa 02" />
             </div>
 
             <div class="bloco-wave-item-container col-sm-12 col-md-12 col-lg-6 col-xl-5">
@@ -416,7 +417,7 @@
             </div>
 
             <div class="bloco-wave-item-image col-sm-12 col-md-12 col-lg-5 no-zindex">
-                <img class="img-fluid" src="image/image-wave-step-3.png" alt="Imagem etapa 03" />
+                <img class="img-fluid" src="image/image-wave-step-3.jpg" alt="Imagem etapa 03" />
             </div>
         </div>
 
@@ -676,6 +677,33 @@
     </div>
 
     <script src="js/carousel.js"></script>
+    <script>
+
+function adjustMargins() {
+            const blocoWaveItem3 = document.querySelector('.bloco-wave-item-3');
+            const minWidth = 2099;
+            const maxWidth = 3000;
+    
+            const viewportWidth = window.innerWidth;
+    
+            if (viewportWidth >= minWidth) {
+                // Calcula as margens em pixels diretamente
+                const topMargin = 5 + 81 * ((viewportWidth - minWidth) / (maxWidth - minWidth));
+                
+                blocoWaveItem3.style.marginTop = `${topMargin}rem`;
+    
+                if (viewportWidth >= maxWidth) {
+                    blocoWaveItem3.style.marginTop = '91rem';
+                    blocoWaveItem3.style.marginLeft = '2rem';
+                }
+            } else {
+                blocoWaveItem3.style.margin = '';
+            }
+        }
+    
+        window.addEventListener('resize', adjustMargins);
+        window.addEventListener('DOMContentLoaded', adjustMargins); // Ajusta as margens ao carregar a página
+    </script>
 </body>
 
 </html>
